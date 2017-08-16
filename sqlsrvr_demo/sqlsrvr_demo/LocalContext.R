@@ -143,4 +143,4 @@ predictionoutput <- rxPredict(modelObject = DforestModelObj,
             extraVarsToWrite = c("tstamp","value"),
             overwrite = TRUE)
 
-Predvalues <- cbind(exp(predictionoutput$DforestScore), exp(predictionoutput$value))
+Predvalues <- cbind(exp(predictionoutput$value_Pred), exp(predictionoutput$value))
