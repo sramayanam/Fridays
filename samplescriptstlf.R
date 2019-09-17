@@ -126,3 +126,5 @@ output <- filter(ddply(data, .(ID1, ID2), arima.single.id), as.Date(time, format
 
 #forecastedvalue <- filter(output, as.Date(time, format = "%m/%d/%Y") == as.Date("12/28/2013", format = "%m/%d/%Y"))
 return(output$forecast.STL_ARIMA)
+
+##Commit Token -- 6c18557c303ead8f9bac330ff81a54c0f33f9366
